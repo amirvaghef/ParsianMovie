@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FilmSubtitlesDS" targetNamespace="http://tempuri.org/FilmSubtitlesDS.xsd" xmlns:mstns="http://tempuri.org/FilmSubtitlesDS.xsd" xmlns="http://tempuri.org/FilmSubtitlesDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FilmSubtitlesDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FilmSubtitlesDS" msprop:Generator_DataSetName="FilmSubtitlesDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vFilmSubtitles" msprop:Generator_UserTableName="vFilmSubtitles" msprop:Generator_RowDeletedName="vFilmSubtitlesRowDeleted" msprop:Generator_RowChangedName="vFilmSubtitlesRowChanged" msprop:Generator_RowClassName="vFilmSubtitlesRow" msprop:Generator_RowChangingName="vFilmSubtitlesRowChanging" msprop:Generator_RowEvArgName="vFilmSubtitlesRowChangeEvent" msprop:Generator_RowEvHandlerName="vFilmSubtitlesRowChangeEventHandler" msprop:Generator_TableClassName="vFilmSubtitlesDataTable" msprop:Generator_TableVarName="tablevFilmSubtitles" msprop:Generator_RowDeletingName="vFilmSubtitlesRowDeleting" msprop:Generator_TablePropName="vFilmSubtitles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldFilmID" msprop:Generator_UserColumnName="fldFilmID" msprop:Generator_ColumnVarNameInTable="columnfldFilmID" msprop:Generator_ColumnPropNameInRow="fldFilmID" msprop:Generator_ColumnPropNameInTable="fldFilmIDColumn" type="xs:long" />
+              <xs:element name="fldSubtitlesID" msprop:Generator_UserColumnName="fldSubtitlesID" msprop:Generator_ColumnVarNameInTable="columnfldSubtitlesID" msprop:Generator_ColumnPropNameInRow="fldSubtitlesID" msprop:Generator_ColumnPropNameInTable="fldSubtitlesIDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="fldSubtitlesName" msprop:Generator_UserColumnName="fldSubtitlesName" msprop:Generator_ColumnVarNameInTable="columnfldSubtitlesName" msprop:Generator_ColumnPropNameInRow="fldSubtitlesName" msprop:Generator_ColumnPropNameInTable="fldSubtitlesNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vFilmSubtitles" />
+      <xs:field xpath="mstns:fldFilmID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

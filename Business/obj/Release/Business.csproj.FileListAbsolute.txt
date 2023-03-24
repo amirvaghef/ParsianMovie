@@ -1,0 +1,9 @@
+G:\Own Program\ParsianMovie\Business\bin\Release\Business.dll
+G:\Own Program\ParsianMovie\Business\bin\Release\Business.pdb
+G:\Own Program\ParsianMovie\Business\bin\Release\Common.dll
+G:\Own Program\ParsianMovie\Business\bin\Release\DataAccess.dll
+G:\Own Program\ParsianMovie\Business\bin\Release\Common.pdb
+G:\Own Program\ParsianMovie\Business\bin\Release\DataAccess.pdb
+G:\Own Program\ParsianMovie\Business\obj\Release\ResolveAssemblyReference.cache
+G:\Own Program\ParsianMovie\Business\obj\Release\Business.dll
+G:\Own Program\ParsianMovie\Business\obj\Release\Business.pdb

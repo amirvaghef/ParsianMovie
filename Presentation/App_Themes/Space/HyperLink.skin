@@ -1,0 +1,40 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:HyperLink SkinID="Specification" runat="server" Text="تغيير مشخصات كاربری" ToolTip="تغيير رمز عبور و مشخصات كلی" ForeColor="#f5c4c4"/>
+<asp:HyperLink SkinID="LastBought" runat="server" Text="خريدهای قبلی" ToolTip="خريدهای قبلی" ForeColor="#f5c4c4"/>
+<asp:HyperLink SkinID="Basket" runat="server" Text="سبد خريد" ToolTip="سبد خريد" ForeColor="#f5c4c4"/>
+
+<asp:HyperLink SkinID="Films" runat="server" Text="فيلم ها" ToolTip="به روز رسانی ليست فيلم ها" ForeColor="#f5c4c4"/>
+<asp:HyperLink SkinID="Advertisment" runat="server" Text="تبليغات" ToolTip="به روز رسانی تبليغات" ForeColor="#f5c4c4"/>
+<asp:HyperLink SkinID="BaseInformation" runat="server" Text="اطلاعات پايه" ToolTip="به روز رسانی اطلاعات پايه" ForeColor="#f5c4c4"/>
+<asp:HyperLink SkinID="Skin" runat="server" Text="ظاهر سايت" ToolTip="تغيير ظاهر كلی سايت" ForeColor="#f5c4c4"/>
+<asp:HyperLink SkinID="Faq" runat="server" Text="سوالات متداول" ToolTip="به روز رسانی سوالات متداول" ForeColor="#f5c4c4"/>
+
+<asp:HyperLink SkinID="UsersInformation" runat="server" Text="اطلاعات كاربران" ToolTip="به روز رسانی اطلاعات كاربران" ForeColor="#f5c4c4"/>
+<asp:HyperLink SkinID="ContactUsInformation" runat="server" Text="اطلاعات تماس با ما" ToolTip="دستكاری اطلاعات ايميل برای تماس با ما" ForeColor="#f5c4c4"/>
+<asp:HyperLink SkinID="BankAccountInformation" runat="server" Text="اطلاعات حساب های بانكی" ToolTip="به روز رسانی اطلاعات حساب های بانكی" ForeColor="#f5c4c4"/>
+
+<asp:HyperLink SkinID="THome" runat="server" Text="خانه" ToolTip="صفحه اصلی" ForeColor="#f5c4c4" ImageUrl="images/house.gif"/>
+<asp:HyperLink SkinID="TFaq" runat="server" Text="سوالات متداول" ToolTip="سوالات متداول" ForeColor="#f5c4c4" ImageUrl="images/help.gif"/>
+<asp:HyperLink SkinID="TContactUs" runat="server" Text="تماس با ما" ToolTip="تماس با ما" ForeColor="#f5c4c4" ImageUrl="images/email.gif"/>
+<asp:HyperLink SkinID="TAdvancedSearch" runat="server" Text="جستجوی پيشرفته" ToolTip="جستجوی پيشرفته" ForeColor="#f5c4c4" ImageUrl="images/search.gif"/>
+
+<asp:HyperLink SkinID="AdvancedSearch" runat="server" Text="جستجوی پيشرفته" ToolTip="جستجوی پيشرفته" ForeColor="#f5c4c4"/>
+
+<asp:HyperLink SkinID="FullBasketPL" runat="server" Text="سبد خريد پر" ToolTip="سبد خريد پر" ForeColor="#f5c4c4" ImageUrl="images\FullBasket.gif"/>
+<asp:HyperLink SkinID="EmptyBasketPL" runat="server" Text="سبد خريد خالی" ToolTip="سبد خريد خالی" ForeColor="#f5c4c4" ImageUrl="images\EmptyBasket.gif"/>
+
+<asp:HyperLink SkinID="Register" runat="server" Text="ثبت نام" ToolTip="ثبت نام" ForeColor="#f5c4c4" ImageUrl="images\register.gif"/>

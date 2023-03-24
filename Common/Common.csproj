@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B095A4E-80FB-462C-9011-620DB5C0A949}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMDataColumn.cs" />
+    <Compile Include="Data\SingleFilmGenreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleFilmGenreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleFilmLanguageDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleFilmLanguageDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleFilmSubtitlesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleFilmSubtitlesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KindOfferEnum.cs" />
+    <Compile Include="FilterDefinition.cs" />
+    <Compile Include="ColumnTranslator.cs" />
+    <Compile Include="FilterOperation.cs" />
+    <Compile Include="FilterRelation.cs" />
+    <Compile Include="ConnectionManager.cs" />
+    <Compile Include="Data\BuyDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuyDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FilmDS.cs">
+      <DependentUpon>FilmDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\FilmDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FilmDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\RequestBuyDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RequestBuyDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\RequestDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RequestDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleAdvertismentsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleAdvertismentsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleBuyDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleBuyDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleCountryProductDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleCountryProductDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleDVDKindDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleDVDKindDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleEmailDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleEmailDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleFAQDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleFAQDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleFilmDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleFilmDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleGenreDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleGenreDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleKindOfferDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleKindOfferDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleLanguageDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleLanguageDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SinglePaymentWayDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinglePaymentWayDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SinglePersonalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinglePersonalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleQualityDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleQualityDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleRankDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleRankDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleRequestDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleRequestDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleSubtitlesDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleSubtitlesDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SingleTransmissionKindDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SingleTransmissionKindDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IFilterTranslator.cs" />
+    <Compile Include="IObjectId.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFilter.cs" />
+    <Compile Include="SearchFilterToText.cs" />
+    <Compile Include="SQLFilterTranslator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Data\BuyDS.xsc">
+      <DependentUpon>BuyDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\BuyDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BuyDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\BuyDS.xss">
+      <DependentUpon>BuyDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\FilmDS.xsc">
+      <DependentUpon>FilmDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\FilmDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FilmDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\FilmDS.xss">
+      <DependentUpon>FilmDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\RequestBuyDS.xsc">
+      <DependentUpon>RequestBuyDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\RequestBuyDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RequestBuyDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\RequestBuyDS.xss">
+      <DependentUpon>RequestBuyDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\RequestDS.xsc">
+      <DependentUpon>RequestDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\RequestDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RequestDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\RequestDS.xss">
+      <DependentUpon>RequestDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleAdvertismentsDS.xsc">
+      <DependentUpon>SingleAdvertismentsDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleAdvertismentsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleAdvertismentsDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleAdvertismentsDS.xss">
+      <DependentUpon>SingleAdvertismentsDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleBuyDS.xsc">
+      <DependentUpon>SingleBuyDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleBuyDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleBuyDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleBuyDS.xss">
+      <DependentUpon>SingleBuyDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleCountryProductDS.xsc">
+      <DependentUpon>SingleCountryProductDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleCountryProductDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleCountryProductDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleCountryProductDS.xss">
+      <DependentUpon>SingleCountryProductDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleDVDKindDS.xsc">
+      <DependentUpon>SingleDVDKindDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleDVDKindDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleDVDKindDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleDVDKindDS.xss">
+      <DependentUpon>SingleDVDKindDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleEmailDS.xsc">
+      <DependentUpon>SingleEmailDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleEmailDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleEmailDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleEmailDS.xss">
+      <DependentUpon>SingleEmailDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleFAQDS.xsc">
+      <DependentUpon>SingleFAQDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleFAQDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleFAQDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleFAQDS.xss">
+      <DependentUpon>SingleFAQDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleFilmDS.xsc">
+      <DependentUpon>SingleFilmDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleFilmDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleFilmDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleFilmDS.xss">
+      <DependentUpon>SingleFilmDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleFilmGenreDS.xsc">
+      <DependentUpon>SingleFilmGenreDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleFilmGenreDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleFilmGenreDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleFilmGenreDS.xss">
+      <DependentUpon>SingleFilmGenreDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleFilmLanguageDS.xsc">
+      <DependentUpon>SingleFilmLanguageDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleFilmLanguageDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleFilmLanguageDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleFilmLanguageDS.xss">
+      <DependentUpon>SingleFilmLanguageDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleFilmSubtitlesDS.xsc">
+      <DependentUpon>SingleFilmSubtitlesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleFilmSubtitlesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleFilmSubtitlesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleFilmSubtitlesDS.xss">
+      <DependentUpon>SingleFilmSubtitlesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleGenreDS.xsc">
+      <DependentUpon>SingleGenreDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleGenreDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleGenreDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleGenreDS.xss">
+      <DependentUpon>SingleGenreDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleKindOfferDS.xsc">
+      <DependentUpon>SingleKindOfferDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleKindOfferDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleKindOfferDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleKindOfferDS.xss">
+      <DependentUpon>SingleKindOfferDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleLanguageDS.xsc">
+      <DependentUpon>SingleLanguageDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleLanguageDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleLanguageDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleLanguageDS.xss">
+      <DependentUpon>SingleLanguageDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SinglePaymentWayDS.xsc">
+      <DependentUpon>SinglePaymentWayDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SinglePaymentWayDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinglePaymentWayDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SinglePaymentWayDS.xss">
+      <DependentUpon>SinglePaymentWayDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SinglePersonalDS.xsc">
+      <DependentUpon>SinglePersonalDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SinglePersonalDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinglePersonalDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SinglePersonalDS.xss">
+      <DependentUpon>SinglePersonalDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleQualityDS.xsc">
+      <DependentUpon>SingleQualityDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleQualityDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleQualityDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleQualityDS.xss">
+      <DependentUpon>SingleQualityDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleRankDS.xsc">
+      <DependentUpon>SingleRankDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleRankDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleRankDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleRankDS.xss">
+      <DependentUpon>SingleRankDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleRequestDS.xsc">
+      <DependentUpon>SingleRequestDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleRequestDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleRequestDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleRequestDS.xss">
+      <DependentUpon>SingleRequestDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleSubtitlesDS.xsc">
+      <DependentUpon>SingleSubtitlesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleSubtitlesDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleSubtitlesDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleSubtitlesDS.xss">
+      <DependentUpon>SingleSubtitlesDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleTransmissionKindDS.xsc">
+      <DependentUpon>SingleTransmissionKindDS.xsd</DependentUpon>
+    </None>
+    <None Include="Data\SingleTransmissionKindDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SingleTransmissionKindDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\SingleTransmissionKindDS.xss">
+      <DependentUpon>SingleTransmissionKindDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

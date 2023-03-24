@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleAdvertismentsDS" targetNamespace="http://tempuri.org/SingleAdvertismentsDS.xsd" xmlns:mstns="http://tempuri.org/SingleAdvertismentsDS.xsd" xmlns="http://tempuri.org/SingleAdvertismentsDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleAdvertismentsDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleAdvertismentsDS" msprop:Generator_DataSetName="SingleAdvertismentsDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSingleAdverisments" msprop:Generator_UserTableName="vSingleAdverisments" msprop:Generator_RowDeletedName="vSingleAdverismentsRowDeleted" msprop:Generator_TableClassName="vSingleAdverismentsDataTable" msprop:Generator_RowChangedName="vSingleAdverismentsRowChanged" msprop:Generator_RowClassName="vSingleAdverismentsRow" msprop:Generator_RowChangingName="vSingleAdverismentsRowChanging" msprop:Generator_RowEvArgName="vSingleAdverismentsRowChangeEvent" msprop:Generator_RowEvHandlerName="vSingleAdverismentsRowChangeEventHandler" msprop:Generator_TablePropName="vSingleAdverisments" msprop:Generator_TableVarName="tablevSingleAdverisments" msprop:Generator_RowDeletingName="vSingleAdverismentsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldAdvertismentsID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="fldAdvertismentsID" msprop:Generator_ColumnPropNameInRow="fldAdvertismentsID" msprop:Generator_ColumnVarNameInTable="columnfldAdvertismentsID" msprop:Generator_ColumnPropNameInTable="fldAdvertismentsIDColumn" type="xs:long" />
+              <xs:element name="fldName" msprop:Generator_UserColumnName="fldName" msprop:Generator_ColumnPropNameInRow="fldName" msprop:Generator_ColumnVarNameInTable="columnfldName" msprop:Generator_ColumnPropNameInTable="fldNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldCode" msprop:Generator_UserColumnName="fldCode" msprop:Generator_ColumnPropNameInRow="fldCode" msprop:Generator_ColumnVarNameInTable="columnfldCode" msprop:Generator_ColumnPropNameInTable="fldCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldStartDate" msprop:Generator_UserColumnName="fldStartDate" msprop:Generator_ColumnPropNameInRow="fldStartDate" msprop:Generator_ColumnVarNameInTable="columnfldStartDate" msprop:Generator_ColumnPropNameInTable="fldStartDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="fldEndDate" msprop:Generator_UserColumnName="fldEndDate" msprop:Generator_ColumnPropNameInRow="fldEndDate" msprop:Generator_ColumnVarNameInTable="columnfldEndDate" msprop:Generator_ColumnPropNameInTable="fldEndDateColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSingleAdverisments" />
+      <xs:field xpath="mstns:fldAdvertismentsID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

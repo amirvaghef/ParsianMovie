@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleKindOfferDS" targetNamespace="http://tempuri.org/SingleKindOfferDS.xsd" xmlns:mstns="http://tempuri.org/SingleKindOfferDS.xsd" xmlns="http://tempuri.org/SingleKindOfferDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleKindOfferDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleKindOfferDS" msprop:Generator_DataSetName="SingleKindOfferDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSingleKindOffer" msprop:Generator_UserTableName="vSingleKindOffer" msprop:Generator_RowDeletedName="vSingleKindOfferRowDeleted" msprop:Generator_RowChangedName="vSingleKindOfferRowChanged" msprop:Generator_RowClassName="vSingleKindOfferRow" msprop:Generator_RowChangingName="vSingleKindOfferRowChanging" msprop:Generator_RowEvArgName="vSingleKindOfferRowChangeEvent" msprop:Generator_RowEvHandlerName="vSingleKindOfferRowChangeEventHandler" msprop:Generator_TableClassName="vSingleKindOfferDataTable" msprop:Generator_TableVarName="tablevSingleKindOffer" msprop:Generator_RowDeletingName="vSingleKindOfferRowDeleting" msprop:Generator_TablePropName="vSingleKindOffer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldKindOfferID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="fldKindOfferID" msprop:Generator_ColumnVarNameInTable="columnfldKindOfferID" msprop:Generator_ColumnPropNameInRow="fldKindOfferID" msprop:Generator_ColumnPropNameInTable="fldKindOfferIDColumn" type="xs:short" />
+              <xs:element name="fldKindOfferName" msprop:Generator_UserColumnName="fldKindOfferName" msprop:Generator_ColumnVarNameInTable="columnfldKindOfferName" msprop:Generator_ColumnPropNameInRow="fldKindOfferName" msprop:Generator_ColumnPropNameInTable="fldKindOfferNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSingleKindOffer" />
+      <xs:field xpath="mstns:fldKindOfferID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

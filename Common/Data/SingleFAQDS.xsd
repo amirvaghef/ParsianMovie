@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleFAQDS" targetNamespace="http://tempuri.org/SingleFAQDS.xsd" xmlns:mstns="http://tempuri.org/SingleFAQDS.xsd" xmlns="http://tempuri.org/SingleFAQDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleFAQDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleFAQDS" msprop:Generator_DataSetName="SingleFAQDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSingleFAQ" msprop:Generator_UserTableName="vSingleFAQ" msprop:Generator_RowDeletedName="vSingleFAQRowDeleted" msprop:Generator_TableClassName="vSingleFAQDataTable" msprop:Generator_RowChangedName="vSingleFAQRowChanged" msprop:Generator_RowClassName="vSingleFAQRow" msprop:Generator_RowChangingName="vSingleFAQRowChanging" msprop:Generator_RowEvArgName="vSingleFAQRowChangeEvent" msprop:Generator_RowEvHandlerName="vSingleFAQRowChangeEventHandler" msprop:Generator_TablePropName="vSingleFAQ" msprop:Generator_TableVarName="tablevSingleFAQ" msprop:Generator_RowDeletingName="vSingleFAQRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldFAQID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="fldFAQID" msprop:Generator_ColumnPropNameInRow="fldFAQID" msprop:Generator_ColumnVarNameInTable="columnfldFAQID" msprop:Generator_ColumnPropNameInTable="fldFAQIDColumn" type="xs:long" />
+              <xs:element name="fldFAQQuestion" msprop:Generator_UserColumnName="fldFAQQuestion" msprop:Generator_ColumnPropNameInRow="fldFAQQuestion" msprop:Generator_ColumnVarNameInTable="columnfldFAQQuestion" msprop:Generator_ColumnPropNameInTable="fldFAQQuestionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldFAQAnswer" msprop:Generator_UserColumnName="fldFAQAnswer" msprop:Generator_ColumnPropNameInRow="fldFAQAnswer" msprop:Generator_ColumnVarNameInTable="columnfldFAQAnswer" msprop:Generator_ColumnPropNameInTable="fldFAQAnswerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSingleFAQ" />
+      <xs:field xpath="mstns:fldFAQID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

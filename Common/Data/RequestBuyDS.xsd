@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RequestBuyDS" targetNamespace="http://tempuri.org/RequestBuyDS.xsd" xmlns:mstns="http://tempuri.org/RequestBuyDS.xsd" xmlns="http://tempuri.org/RequestBuyDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RequestBuyDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RequestBuyDS" msprop:Generator_DataSetName="RequestBuyDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vRequestBuy" msprop:Generator_UserTableName="vRequestBuy" msprop:Generator_RowDeletedName="vRequestBuyRowDeleted" msprop:Generator_TableClassName="vRequestBuyDataTable" msprop:Generator_RowChangedName="vRequestBuyRowChanged" msprop:Generator_RowClassName="vRequestBuyRow" msprop:Generator_RowChangingName="vRequestBuyRowChanging" msprop:Generator_RowEvArgName="vRequestBuyRowChangeEvent" msprop:Generator_RowEvHandlerName="vRequestBuyRowChangeEventHandler" msprop:Generator_TablePropName="vRequestBuy" msprop:Generator_TableVarName="tablevRequestBuy" msprop:Generator_RowDeletingName="vRequestBuyRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldName" msprop:Generator_UserColumnName="fldName" msprop:Generator_ColumnPropNameInRow="fldName" msprop:Generator_ColumnVarNameInTable="columnfldName" msprop:Generator_ColumnPropNameInTable="fldNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldFamily" msprop:Generator_UserColumnName="fldFamily" msprop:Generator_ColumnPropNameInRow="fldFamily" msprop:Generator_ColumnVarNameInTable="columnfldFamily" msprop:Generator_ColumnPropNameInTable="fldFamilyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldMobilePhone" msprop:Generator_UserColumnName="fldMobilePhone" msprop:Generator_ColumnPropNameInRow="fldMobilePhone" msprop:Generator_ColumnVarNameInTable="columnfldMobilePhone" msprop:Generator_ColumnPropNameInTable="fldMobilePhoneColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldTel" msprop:Generator_UserColumnName="fldTel" msprop:Generator_ColumnPropNameInRow="fldTel" msprop:Generator_ColumnVarNameInTable="columnfldTel" msprop:Generator_ColumnPropNameInTable="fldTelColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldAddress" msprop:Generator_UserColumnName="fldAddress" msprop:Generator_ColumnPropNameInRow="fldAddress" msprop:Generator_ColumnVarNameInTable="columnfldAddress" msprop:Generator_ColumnPropNameInTable="fldAddressColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldPostalCode" msprop:Generator_UserColumnName="fldPostalCode" msprop:Generator_ColumnPropNameInRow="fldPostalCode" msprop:Generator_ColumnVarNameInTable="columnfldPostalCode" msprop:Generator_ColumnPropNameInTable="fldPostalCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldUsername" msprop:Generator_UserColumnName="fldUsername" msprop:Generator_ColumnPropNameInRow="fldUsername" msprop:Generator_ColumnVarNameInTable="columnfldUsername" msprop:Generator_ColumnPropNameInTable="fldUsernameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldEmail" msprop:Generator_UserColumnName="fldEmail" msprop:Generator_ColumnPropNameInRow="fldEmail" msprop:Generator_ColumnVarNameInTable="columnfldEmail" msprop:Generator_ColumnPropNameInTable="fldEmailColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldRequestID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="fldRequestID" msprop:Generator_ColumnPropNameInRow="fldRequestID" msprop:Generator_ColumnVarNameInTable="columnfldRequestID" msprop:Generator_ColumnPropNameInTable="fldRequestIDColumn" type="xs:string" />
+              <xs:element name="fldPrice" msprop:Generator_UserColumnName="fldPrice" msprop:Generator_ColumnPropNameInRow="fldPrice" msprop:Generator_ColumnVarNameInTable="columnfldPrice" msprop:Generator_ColumnPropNameInTable="fldPriceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="fldRequestDate" msprop:Generator_UserColumnName="fldRequestDate" msprop:Generator_ColumnPropNameInRow="fldRequestDate" msprop:Generator_ColumnVarNameInTable="columnfldRequestDate" msprop:Generator_ColumnPropNameInTable="fldRequestDateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldFilmID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="fldFilmID" msprop:Generator_ColumnPropNameInRow="fldFilmID" msprop:Generator_ColumnVarNameInTable="columnfldFilmID" msprop:Generator_ColumnPropNameInTable="fldFilmIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="fldFarsiName" msprop:Generator_UserColumnName="fldFarsiName" msprop:Generator_ColumnPropNameInRow="fldFarsiName" msprop:Generator_ColumnVarNameInTable="columnfldFarsiName" msprop:Generator_ColumnPropNameInTable="fldFarsiNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldEnglishName" msprop:Generator_UserColumnName="fldEnglishName" msprop:Generator_ColumnPropNameInRow="fldEnglishName" msprop:Generator_ColumnVarNameInTable="columnfldEnglishName" msprop:Generator_ColumnPropNameInTable="fldEnglishNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldActors" msprop:Generator_UserColumnName="fldActors" msprop:Generator_ColumnPropNameInRow="fldActors" msprop:Generator_ColumnVarNameInTable="columnfldActors" msprop:Generator_ColumnPropNameInTable="fldActorsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldDirector" msprop:Generator_UserColumnName="fldDirector" msprop:Generator_ColumnPropNameInRow="fldDirector" msprop:Generator_ColumnVarNameInTable="columnfldDirector" msprop:Generator_ColumnPropNameInTable="fldDirectorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldYearsOfProduct" msprop:Generator_UserColumnName="fldYearsOfProduct" msprop:Generator_ColumnPropNameInRow="fldYearsOfProduct" msprop:Generator_ColumnVarNameInTable="columnfldYearsOfProduct" msprop:Generator_ColumnPropNameInTable="fldYearsOfProductColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldIMDBRating" msprop:Generator_UserColumnName="fldIMDBRating" msprop:Generator_ColumnPropNameInRow="fldIMDBRating" msprop:Generator_ColumnVarNameInTable="columnfldIMDBRating" msprop:Generator_ColumnPropNameInTable="fldIMDBRatingColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="fldPoster" msprop:Generator_UserColumnName="fldPoster" msprop:Generator_ColumnPropNameInRow="fldPoster" msprop:Generator_ColumnVarNameInTable="columnfldPoster" msprop:Generator_ColumnPropNameInTable="fldPosterColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldAbstract" msprop:Generator_UserColumnName="fldAbstract" msprop:Generator_ColumnPropNameInRow="fldAbstract" msprop:Generator_ColumnVarNameInTable="columnfldAbstract" msprop:Generator_ColumnPropNameInTable="fldAbstractColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldInformation" msprop:Generator_UserColumnName="fldInformation" msprop:Generator_ColumnPropNameInRow="fldInformation" msprop:Generator_ColumnVarNameInTable="columnfldInformation" msprop:Generator_ColumnPropNameInTable="fldInformationColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldSumVotes" msprop:Generator_UserColumnName="fldSumVotes" msprop:Generator_ColumnPropNameInRow="fldSumVotes" msprop:Generator_ColumnVarNameInTable="columnfldSumVotes" msprop:Generator_ColumnPropNameInTable="fldSumVotesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="fldCountVotes" msprop:Generator_UserColumnName="fldCountVotes" msprop:Generator_ColumnPropNameInRow="fldCountVotes" msprop:Generator_ColumnVarNameInTable="columnfldCountVotes" msprop:Generator_ColumnPropNameInTable="fldCountVotesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="fldSection" msprop:Generator_UserColumnName="fldSection" msprop:Generator_ColumnPropNameInRow="fldSection" msprop:Generator_ColumnVarNameInTable="columnfldSection" msprop:Generator_ColumnPropNameInTable="fldSectionColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="fldTime" msprop:Generator_UserColumnName="fldTime" msprop:Generator_ColumnPropNameInRow="fldTime" msprop:Generator_ColumnVarNameInTable="columnfldTime" msprop:Generator_ColumnPropNameInTable="fldTimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldKindOfferName" msprop:Generator_UserColumnName="fldKindOfferName" msprop:Generator_ColumnPropNameInRow="fldKindOfferName" msprop:Generator_ColumnVarNameInTable="columnfldKindOfferName" msprop:Generator_ColumnPropNameInTable="fldKindOfferNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldCountryProductName" msprop:Generator_UserColumnName="fldCountryProductName" msprop:Generator_ColumnPropNameInRow="fldCountryProductName" msprop:Generator_ColumnVarNameInTable="columnfldCountryProductName" msprop:Generator_ColumnPropNameInTable="fldCountryProductNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldQualityName" msprop:Generator_UserColumnName="fldQualityName" msprop:Generator_ColumnPropNameInRow="fldQualityName" msprop:Generator_ColumnVarNameInTable="columnfldQualityName" msprop:Generator_ColumnPropNameInTable="fldQualityNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldRankName" msprop:Generator_UserColumnName="fldRankName" msprop:Generator_ColumnPropNameInRow="fldRankName" msprop:Generator_ColumnVarNameInTable="columnfldRankName" msprop:Generator_ColumnPropNameInTable="fldRankNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldComment" msprop:Generator_UserColumnName="fldComment" msprop:Generator_ColumnPropNameInRow="fldComment" msprop:Generator_ColumnVarNameInTable="columnfldComment" msprop:Generator_ColumnPropNameInTable="fldCommentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldfk_BuyID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="fldfk_BuyID" msprop:Generator_ColumnPropNameInRow="fldfk_BuyID" msprop:Generator_ColumnVarNameInTable="columnfldfk_BuyID" msprop:Generator_ColumnPropNameInTable="fldfk_BuyIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="fldfk_FilmID" msprop:Generator_UserColumnName="fldfk_FilmID" msprop:Generator_ColumnPropNameInRow="fldfk_FilmID" msprop:Generator_ColumnVarNameInTable="columnfldfk_FilmID" msprop:Generator_ColumnPropNameInTable="fldfk_FilmIDColumn" type="xs:long" />
+              <xs:element name="fldfk_Username" msprop:Generator_UserColumnName="fldfk_Username" msprop:Generator_ColumnPropNameInRow="fldfk_Username" msprop:Generator_ColumnVarNameInTable="columnfldfk_Username" msprop:Generator_ColumnPropNameInTable="fldfk_UsernameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vRequestBuy" />
+      <xs:field xpath="mstns:fldRequestID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

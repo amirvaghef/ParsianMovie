@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleTransmissionKindDS" targetNamespace="http://tempuri.org/SingleTransmissionKindDS.xsd" xmlns:mstns="http://tempuri.org/SingleTransmissionKindDS.xsd" xmlns="http://tempuri.org/SingleTransmissionKindDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleTransmissionKindDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleTransmissionKindDS" msprop:Generator_DataSetName="SingleTransmissionKindDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSingleTransmissionKind" msprop:Generator_UserTableName="vSingleTransmissionKind" msprop:Generator_RowDeletedName="vSingleTransmissionKindRowDeleted" msprop:Generator_RowChangedName="vSingleTransmissionKindRowChanged" msprop:Generator_RowClassName="vSingleTransmissionKindRow" msprop:Generator_RowChangingName="vSingleTransmissionKindRowChanging" msprop:Generator_RowEvArgName="vSingleTransmissionKindRowChangeEvent" msprop:Generator_RowEvHandlerName="vSingleTransmissionKindRowChangeEventHandler" msprop:Generator_TableClassName="vSingleTransmissionKindDataTable" msprop:Generator_TableVarName="tablevSingleTransmissionKind" msprop:Generator_RowDeletingName="vSingleTransmissionKindRowDeleting" msprop:Generator_TablePropName="vSingleTransmissionKind">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldTransmissionKindID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="fldTransmissionKindID" msprop:Generator_ColumnVarNameInTable="columnfldTransmissionKindID" msprop:Generator_ColumnPropNameInRow="fldTransmissionKindID" msprop:Generator_ColumnPropNameInTable="fldTransmissionKindIDColumn" type="xs:short" />
+              <xs:element name="fldTransmissionKindName" msprop:Generator_UserColumnName="fldTransmissionKindName" msprop:Generator_ColumnVarNameInTable="columnfldTransmissionKindName" msprop:Generator_ColumnPropNameInRow="fldTransmissionKindName" msprop:Generator_ColumnPropNameInTable="fldTransmissionKindNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldTransmissionKindPrice" msprop:Generator_UserColumnName="fldTransmissionKindPrice" msprop:Generator_ColumnVarNameInTable="columnfldTransmissionKindPrice" msprop:Generator_ColumnPropNameInRow="fldTransmissionKindPrice" msprop:Generator_ColumnPropNameInTable="fldTransmissionKindPriceColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSingleTransmissionKind" />
+      <xs:field xpath="mstns:fldTransmissionKindID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

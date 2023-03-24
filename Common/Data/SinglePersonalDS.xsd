@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SinglePersonalDS" targetNamespace="http://tempuri.org/SinglePersonalDS.xsd" xmlns:mstns="http://tempuri.org/SinglePersonalDS.xsd" xmlns="http://tempuri.org/SinglePersonalDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ParsianMovieDBConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SinglePersonalDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="SinglePersonalDS" msprop:Generator_UserDSName="SinglePersonalDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSinglePersonal" msprop:Generator_TableClassName="vSinglePersonalDataTable" msprop:Generator_TableVarName="tablevSinglePersonal" msprop:Generator_TablePropName="vSinglePersonal" msprop:Generator_RowDeletingName="vSinglePersonalRowDeleting" msprop:Generator_UserTableName="vSinglePersonal" msprop:Generator_RowChangingName="vSinglePersonalRowChanging" msprop:Generator_RowEvHandlerName="vSinglePersonalRowChangeEventHandler" msprop:Generator_RowDeletedName="vSinglePersonalRowDeleted" msprop:Generator_RowEvArgName="vSinglePersonalRowChangeEvent" msprop:Generator_RowChangedName="vSinglePersonalRowChanged" msprop:Generator_RowClassName="vSinglePersonalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldUsername" msprop:Generator_ColumnVarNameInTable="columnfldUsername" msprop:Generator_ColumnPropNameInRow="fldUsername" msprop:Generator_ColumnPropNameInTable="fldUsernameColumn" msprop:Generator_UserColumnName="fldUsername">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldName" msprop:Generator_ColumnVarNameInTable="columnfldName" msprop:Generator_ColumnPropNameInRow="fldName" msprop:Generator_ColumnPropNameInTable="fldNameColumn" msprop:Generator_UserColumnName="fldName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldFamily" msprop:Generator_ColumnVarNameInTable="columnfldFamily" msprop:Generator_ColumnPropNameInRow="fldFamily" msprop:Generator_ColumnPropNameInTable="fldFamilyColumn" msprop:Generator_UserColumnName="fldFamily" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldMobilePhone" msprop:Generator_ColumnVarNameInTable="columnfldMobilePhone" msprop:Generator_ColumnPropNameInRow="fldMobilePhone" msprop:Generator_ColumnPropNameInTable="fldMobilePhoneColumn" msprop:Generator_UserColumnName="fldMobilePhone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldTel" msprop:Generator_ColumnVarNameInTable="columnfldTel" msprop:Generator_ColumnPropNameInRow="fldTel" msprop:Generator_ColumnPropNameInTable="fldTelColumn" msprop:Generator_UserColumnName="fldTel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldAddress" msprop:Generator_ColumnVarNameInTable="columnfldAddress" msprop:Generator_ColumnPropNameInRow="fldAddress" msprop:Generator_ColumnPropNameInTable="fldAddressColumn" msprop:Generator_UserColumnName="fldAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldPostalCode" msprop:Generator_ColumnVarNameInTable="columnfldPostalCode" msprop:Generator_ColumnPropNameInRow="fldPostalCode" msprop:Generator_ColumnPropNameInTable="fldPostalCodeColumn" msprop:Generator_UserColumnName="fldPostalCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldEmail" msprop:Generator_ColumnVarNameInTable="columnfldEmail" msprop:Generator_ColumnPropNameInRow="fldEmail" msprop:Generator_ColumnPropNameInTable="fldEmailColumn" msprop:Generator_UserColumnName="fldEmail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSinglePersonal" />
+      <xs:field xpath="mstns:fldUsername" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,9 @@
+C:\Own Program\ParsianMovie\Business\bin\Debug\Business.dll
+C:\Own Program\ParsianMovie\Business\bin\Debug\Business.pdb
+C:\Own Program\ParsianMovie\Business\bin\Debug\Common.dll
+C:\Own Program\ParsianMovie\Business\bin\Debug\DataAccess.dll
+C:\Own Program\ParsianMovie\Business\bin\Debug\DataAccess.pdb
+C:\Own Program\ParsianMovie\Business\bin\Debug\Common.pdb
+C:\Own Program\ParsianMovie\Business\obj\Debug\ResolveAssemblyReference.cache
+C:\Own Program\ParsianMovie\Business\obj\Debug\Business.dll
+C:\Own Program\ParsianMovie\Business\obj\Debug\Business.pdb

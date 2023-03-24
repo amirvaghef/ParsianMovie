@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleFilmGenreDS" targetNamespace="http://tempuri.org/SingleFilmGenreDS.xsd" xmlns:mstns="http://tempuri.org/SingleFilmGenreDS.xsd" xmlns="http://tempuri.org/SingleFilmGenreDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleFilmGenreDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleFilmGenreDS" msprop:Generator_DataSetName="SingleFilmGenreDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vFilmGenre" msprop:Generator_UserTableName="vFilmGenre" msprop:Generator_RowDeletedName="vFilmGenreRowDeleted" msprop:Generator_TableClassName="vFilmGenreDataTable" msprop:Generator_RowChangedName="vFilmGenreRowChanged" msprop:Generator_RowClassName="vFilmGenreRow" msprop:Generator_RowChangingName="vFilmGenreRowChanging" msprop:Generator_RowEvArgName="vFilmGenreRowChangeEvent" msprop:Generator_RowEvHandlerName="vFilmGenreRowChangeEventHandler" msprop:Generator_TablePropName="vFilmGenre" msprop:Generator_TableVarName="tablevFilmGenre" msprop:Generator_RowDeletingName="vFilmGenreRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldFilmGenreID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="fldFilmGenreID" msprop:Generator_ColumnPropNameInRow="fldFilmGenreID" msprop:Generator_ColumnVarNameInTable="columnfldFilmGenreID" msprop:Generator_ColumnPropNameInTable="fldFilmGenreIDColumn" type="xs:string" />
+              <xs:element name="fldfk_GenreID" msprop:Generator_UserColumnName="fldfk_GenreID" msprop:Generator_ColumnPropNameInRow="fldfk_GenreID" msprop:Generator_ColumnVarNameInTable="columnfldfk_GenreID" msprop:Generator_ColumnPropNameInTable="fldfk_GenreIDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="fldfk_FilmID" msprop:Generator_UserColumnName="fldfk_FilmID" msprop:Generator_ColumnPropNameInRow="fldfk_FilmID" msprop:Generator_ColumnVarNameInTable="columnfldfk_FilmID" msprop:Generator_ColumnPropNameInTable="fldfk_FilmIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="fldGenreName" msprop:Generator_UserColumnName="fldGenreName" msprop:Generator_ColumnPropNameInRow="fldGenreName" msprop:Generator_ColumnVarNameInTable="columnfldGenreName" msprop:Generator_ColumnPropNameInTable="fldGenreNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vFilmGenre" />
+      <xs:field xpath="mstns:fldFilmGenreID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

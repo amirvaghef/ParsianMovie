@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleGenreDS" targetNamespace="http://tempuri.org/SingleGenreDS.xsd" xmlns:mstns="http://tempuri.org/SingleGenreDS.xsd" xmlns="http://tempuri.org/SingleGenreDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleGenreDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleGenreDS" msprop:Generator_DataSetName="SingleGenreDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSingleGenre" msprop:Generator_UserTableName="vSingleGenre" msprop:Generator_RowDeletedName="vSingleGenreRowDeleted" msprop:Generator_RowChangedName="vSingleGenreRowChanged" msprop:Generator_RowClassName="vSingleGenreRow" msprop:Generator_RowChangingName="vSingleGenreRowChanging" msprop:Generator_RowEvArgName="vSingleGenreRowChangeEvent" msprop:Generator_RowEvHandlerName="vSingleGenreRowChangeEventHandler" msprop:Generator_TableClassName="vSingleGenreDataTable" msprop:Generator_TableVarName="tablevSingleGenre" msprop:Generator_RowDeletingName="vSingleGenreRowDeleting" msprop:Generator_TablePropName="vSingleGenre">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldGenreID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="fldGenreID" msprop:Generator_ColumnVarNameInTable="columnfldGenreID" msprop:Generator_ColumnPropNameInRow="fldGenreID" msprop:Generator_ColumnPropNameInTable="fldGenreIDColumn" type="xs:short" />
+              <xs:element name="fldGenreName" msprop:Generator_UserColumnName="fldGenreName" msprop:Generator_ColumnVarNameInTable="columnfldGenreName" msprop:Generator_ColumnPropNameInRow="fldGenreName" msprop:Generator_ColumnPropNameInTable="fldGenreNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSingleGenre" />
+      <xs:field xpath="mstns:fldGenreID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

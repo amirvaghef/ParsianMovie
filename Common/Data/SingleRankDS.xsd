@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleRankDS" targetNamespace="http://tempuri.org/SingleRankDS.xsd" xmlns:mstns="http://tempuri.org/SingleRankDS.xsd" xmlns="http://tempuri.org/SingleRankDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleRankDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleRankDS" msprop:Generator_DataSetName="SingleRankDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSingleRank" msprop:Generator_UserTableName="vSingleRank" msprop:Generator_RowDeletedName="vSingleRankRowDeleted" msprop:Generator_RowChangedName="vSingleRankRowChanged" msprop:Generator_RowClassName="vSingleRankRow" msprop:Generator_RowChangingName="vSingleRankRowChanging" msprop:Generator_RowEvArgName="vSingleRankRowChangeEvent" msprop:Generator_RowEvHandlerName="vSingleRankRowChangeEventHandler" msprop:Generator_TableClassName="vSingleRankDataTable" msprop:Generator_TableVarName="tablevSingleRank" msprop:Generator_RowDeletingName="vSingleRankRowDeleting" msprop:Generator_TablePropName="vSingleRank">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldRankID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="fldRankID" msprop:Generator_ColumnVarNameInTable="columnfldRankID" msprop:Generator_ColumnPropNameInRow="fldRankID" msprop:Generator_ColumnPropNameInTable="fldRankIDColumn" type="xs:short" />
+              <xs:element name="fldRankName" msprop:Generator_UserColumnName="fldRankName" msprop:Generator_ColumnVarNameInTable="columnfldRankName" msprop:Generator_ColumnPropNameInRow="fldRankName" msprop:Generator_ColumnPropNameInTable="fldRankNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSingleRank" />
+      <xs:field xpath="mstns:fldRankID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

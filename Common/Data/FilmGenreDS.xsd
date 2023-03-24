@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FilmGenreDS" targetNamespace="http://tempuri.org/FilmGenreDS.xsd" xmlns:mstns="http://tempuri.org/FilmGenreDS.xsd" xmlns="http://tempuri.org/FilmGenreDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FilmGenreDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="FilmGenreDS" msprop:Generator_DataSetName="FilmGenreDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vFilmGenre" msprop:Generator_UserTableName="vFilmGenre" msprop:Generator_RowDeletedName="vFilmGenreRowDeleted" msprop:Generator_RowChangedName="vFilmGenreRowChanged" msprop:Generator_RowClassName="vFilmGenreRow" msprop:Generator_RowChangingName="vFilmGenreRowChanging" msprop:Generator_RowEvArgName="vFilmGenreRowChangeEvent" msprop:Generator_RowEvHandlerName="vFilmGenreRowChangeEventHandler" msprop:Generator_TableClassName="vFilmGenreDataTable" msprop:Generator_TableVarName="tablevFilmGenre" msprop:Generator_RowDeletingName="vFilmGenreRowDeleting" msprop:Generator_TablePropName="vFilmGenre">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldFilmID" msprop:Generator_UserColumnName="fldFilmID" msprop:Generator_ColumnVarNameInTable="columnfldFilmID" msprop:Generator_ColumnPropNameInRow="fldFilmID" msprop:Generator_ColumnPropNameInTable="fldFilmIDColumn" type="xs:long" />
+              <xs:element name="fldGenreID" msprop:Generator_UserColumnName="fldGenreID" msprop:Generator_ColumnVarNameInTable="columnfldGenreID" msprop:Generator_ColumnPropNameInRow="fldGenreID" msprop:Generator_ColumnPropNameInTable="fldGenreIDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="fldGenreName" msprop:Generator_UserColumnName="fldGenreName" msprop:Generator_ColumnVarNameInTable="columnfldGenreName" msprop:Generator_ColumnPropNameInRow="fldGenreName" msprop:Generator_ColumnPropNameInTable="fldGenreNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="vFilmGenreKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vFilmGenre" />
+      <xs:field xpath="mstns:fldFilmID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

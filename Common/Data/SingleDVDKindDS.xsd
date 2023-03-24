@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleDVDKindDS" targetNamespace="http://tempuri.org/SingleDVDKindDS.xsd" xmlns:mstns="http://tempuri.org/SingleDVDKindDS.xsd" xmlns="http://tempuri.org/SingleDVDKindDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleDVDKindDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleDVDKindDS" msprop:Generator_DataSetName="SingleDVDKindDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSingleDVDKind" msprop:Generator_UserTableName="vSingleDVDKind" msprop:Generator_RowDeletedName="vSingleDVDKindRowDeleted" msprop:Generator_RowChangedName="vSingleDVDKindRowChanged" msprop:Generator_RowClassName="vSingleDVDKindRow" msprop:Generator_RowChangingName="vSingleDVDKindRowChanging" msprop:Generator_RowEvArgName="vSingleDVDKindRowChangeEvent" msprop:Generator_RowEvHandlerName="vSingleDVDKindRowChangeEventHandler" msprop:Generator_TableClassName="vSingleDVDKindDataTable" msprop:Generator_TableVarName="tablevSingleDVDKind" msprop:Generator_RowDeletingName="vSingleDVDKindRowDeleting" msprop:Generator_TablePropName="vSingleDVDKind">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldDVDKindID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="fldDVDKindID" msprop:Generator_ColumnVarNameInTable="columnfldDVDKindID" msprop:Generator_ColumnPropNameInRow="fldDVDKindID" msprop:Generator_ColumnPropNameInTable="fldDVDKindIDColumn" type="xs:short" />
+              <xs:element name="fldDVDKindName" msprop:Generator_UserColumnName="fldDVDKindName" msprop:Generator_ColumnVarNameInTable="columnfldDVDKindName" msprop:Generator_ColumnPropNameInRow="fldDVDKindName" msprop:Generator_ColumnPropNameInTable="fldDVDKindNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldDVDKindPrice" msprop:Generator_UserColumnName="fldDVDKindPrice" msprop:Generator_ColumnVarNameInTable="columnfldDVDKindPrice" msprop:Generator_ColumnPropNameInRow="fldDVDKindPrice" msprop:Generator_ColumnPropNameInTable="fldDVDKindPriceColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSingleDVDKind" />
+      <xs:field xpath="mstns:fldDVDKindID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

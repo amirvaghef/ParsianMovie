@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleRequestDS" targetNamespace="http://tempuri.org/SingleRequestDS.xsd" xmlns:mstns="http://tempuri.org/SingleRequestDS.xsd" xmlns="http://tempuri.org/SingleRequestDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleRequestDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleRequestDS" msprop:Generator_DataSetName="SingleRequestDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSingleRequest" msprop:Generator_UserTableName="vSingleRequest" msprop:Generator_RowDeletedName="vSingleRequestRowDeleted" msprop:Generator_TableClassName="vSingleRequestDataTable" msprop:Generator_RowChangedName="vSingleRequestRowChanged" msprop:Generator_RowClassName="vSingleRequestRow" msprop:Generator_RowChangingName="vSingleRequestRowChanging" msprop:Generator_RowEvArgName="vSingleRequestRowChangeEvent" msprop:Generator_RowEvHandlerName="vSingleRequestRowChangeEventHandler" msprop:Generator_TablePropName="vSingleRequest" msprop:Generator_TableVarName="tablevSingleRequest" msprop:Generator_RowDeletingName="vSingleRequestRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldRequestID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="fldRequestID" msprop:Generator_ColumnPropNameInRow="fldRequestID" msprop:Generator_ColumnVarNameInTable="columnfldRequestID" msprop:Generator_ColumnPropNameInTable="fldRequestIDColumn" type="xs:string" />
+              <xs:element name="fldfk_FilmID" msprop:Generator_UserColumnName="fldfk_FilmID" msprop:Generator_ColumnPropNameInRow="fldfk_FilmID" msprop:Generator_ColumnVarNameInTable="columnfldfk_FilmID" msprop:Generator_ColumnPropNameInTable="fldfk_FilmIDColumn" type="xs:long" />
+              <xs:element name="fldfk_Username" msprop:Generator_UserColumnName="fldfk_Username" msprop:Generator_ColumnPropNameInRow="fldfk_Username" msprop:Generator_ColumnVarNameInTable="columnfldfk_Username" msprop:Generator_ColumnPropNameInTable="fldfk_UsernameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldfk_BuyID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="fldfk_BuyID" msprop:Generator_ColumnPropNameInRow="fldfk_BuyID" msprop:Generator_ColumnVarNameInTable="columnfldfk_BuyID" msprop:Generator_ColumnPropNameInTable="fldfk_BuyIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="fldPrice" msprop:Generator_UserColumnName="fldPrice" msprop:Generator_ColumnPropNameInRow="fldPrice" msprop:Generator_ColumnVarNameInTable="columnfldPrice" msprop:Generator_ColumnPropNameInTable="fldPriceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="fldRequestDate" msprop:Generator_UserColumnName="fldRequestDate" msprop:Generator_ColumnPropNameInRow="fldRequestDate" msprop:Generator_ColumnVarNameInTable="columnfldRequestDate" msprop:Generator_ColumnPropNameInTable="fldRequestDateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSingleRequest" />
+      <xs:field xpath="mstns:fldRequestID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

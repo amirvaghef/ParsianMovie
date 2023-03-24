@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SinglePaymentWayDS" targetNamespace="http://tempuri.org/SinglePaymentWayDS.xsd" xmlns:mstns="http://tempuri.org/SinglePaymentWayDS.xsd" xmlns="http://tempuri.org/SinglePaymentWayDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SinglePaymentWayDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SinglePaymentWayDS" msprop:Generator_DataSetName="SinglePaymentWayDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSinglePaymentWay" msprop:Generator_UserTableName="vSinglePaymentWay" msprop:Generator_RowDeletedName="vSinglePaymentWayRowDeleted" msprop:Generator_RowChangedName="vSinglePaymentWayRowChanged" msprop:Generator_RowClassName="vSinglePaymentWayRow" msprop:Generator_RowChangingName="vSinglePaymentWayRowChanging" msprop:Generator_RowEvArgName="vSinglePaymentWayRowChangeEvent" msprop:Generator_RowEvHandlerName="vSinglePaymentWayRowChangeEventHandler" msprop:Generator_TableClassName="vSinglePaymentWayDataTable" msprop:Generator_TableVarName="tablevSinglePaymentWay" msprop:Generator_RowDeletingName="vSinglePaymentWayRowDeleting" msprop:Generator_TablePropName="vSinglePaymentWay">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldPaymentWayID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="fldPaymentWayID" msprop:Generator_ColumnVarNameInTable="columnfldPaymentWayID" msprop:Generator_ColumnPropNameInRow="fldPaymentWayID" msprop:Generator_ColumnPropNameInTable="fldPaymentWayIDColumn" type="xs:short" />
+              <xs:element name="fldPaymentWayName" msprop:Generator_UserColumnName="fldPaymentWayName" msprop:Generator_ColumnVarNameInTable="columnfldPaymentWayName" msprop:Generator_ColumnPropNameInRow="fldPaymentWayName" msprop:Generator_ColumnPropNameInTable="fldPaymentWayNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldPaymentWayPage" msprop:Generator_UserColumnName="fldPaymentWayPage" msprop:Generator_ColumnVarNameInTable="columnfldPaymentWayPage" msprop:Generator_ColumnPropNameInRow="fldPaymentWayPage" msprop:Generator_ColumnPropNameInTable="fldPaymentWayPageColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSinglePaymentWay" />
+      <xs:field xpath="mstns:fldPaymentWayID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

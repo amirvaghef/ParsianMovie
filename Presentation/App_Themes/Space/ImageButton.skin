@@ -1,0 +1,36 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:ImageButton SkinID="HeaderImage" runat="server" ImageUrl="images\collapse.jpg"/>
+
+<asp:ImageButton SkinID="SearchButton" runat="server" ImageUrl="images\searchButton.gif" ImageAlign=Bottom/>
+<asp:ImageButton SkinID="AdvancedSearchButton" runat="server" ImageUrl="images\AdvancedSearch.gif" ImageAlign=Bottom/>
+
+<asp:ImageButton SkinID="LoginButton" runat="server" ImageUrl="images\login.gif"/>
+
+<asp:ImageButton SkinID="SubmitButton" runat="server" ImageUrl="images\Submit.gif"/>
+<asp:ImageButton SkinID="ResetButton" runat="server" ImageUrl="images\Reset.gif"/>
+<asp:ImageButton SkinID="CancelButton" runat="server" ImageUrl="images\Cancel.gif"/>
+<asp:ImageButton SkinID="UpdateButton" runat="server" ImageUrl="images\Update.gif"/>
+<asp:ImageButton SkinID="DeleteButton" runat="server" ImageUrl="images\Delete.gif"/>
+<asp:ImageButton SkinID="BuyButton" runat="server" ImageUrl="images\Buy.gif"/>
+<asp:ImageButton SkinID="UploadButton" runat="server" ImageUrl="images\Upload.gif"/>
+<asp:ImageButton SkinID="InsertButton" runat="server" ImageUrl="images\Submit.gif"/>
+
+<asp:ImageButton SkinID="SendMail" runat="server" ImageUrl="images\SendMail.gif"/>
+<asp:ImageButton SkinID="CancelMail" runat="server" ImageUrl="images\CancelMail.gif"/>
+
+<asp:ImageButton SkinID="FullBasket" runat="server" ImageUrl="images\DelBasket.gif" ToolTip="حذف كردن از سبد خريد"/>
+<asp:ImageButton SkinID="EmptyBasket" runat="server" ImageUrl="images\AddBasket.gif" ToolTip="اضافه كردن به سبد خريد"/>

@@ -1,0 +1,7 @@
+G:\Own Program\ParsianMovie\DataAccess\bin\Release\DataAccess.dll
+G:\Own Program\ParsianMovie\DataAccess\bin\Release\DataAccess.pdb
+G:\Own Program\ParsianMovie\DataAccess\bin\Release\Common.dll
+G:\Own Program\ParsianMovie\DataAccess\bin\Release\Common.pdb
+G:\Own Program\ParsianMovie\DataAccess\obj\Release\ResolveAssemblyReference.cache
+G:\Own Program\ParsianMovie\DataAccess\obj\Release\DataAccess.dll
+G:\Own Program\ParsianMovie\DataAccess\obj\Release\DataAccess.pdb

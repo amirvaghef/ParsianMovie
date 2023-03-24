@@ -1,0 +1,7 @@
+C:\Own Program\ParsianMovie\DataAccess\bin\Debug\DataAccess.dll
+C:\Own Program\ParsianMovie\DataAccess\bin\Debug\DataAccess.pdb
+C:\Own Program\ParsianMovie\DataAccess\bin\Debug\Common.dll
+C:\Own Program\ParsianMovie\DataAccess\bin\Debug\Common.pdb
+C:\Own Program\ParsianMovie\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Own Program\ParsianMovie\DataAccess\obj\Debug\DataAccess.dll
+C:\Own Program\ParsianMovie\DataAccess\obj\Debug\DataAccess.pdb

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleFilmSubtitlesDS" targetNamespace="http://tempuri.org/SingleFilmSubtitlesDS.xsd" xmlns:mstns="http://tempuri.org/SingleFilmSubtitlesDS.xsd" xmlns="http://tempuri.org/SingleFilmSubtitlesDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleFilmSubtitlesDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleFilmSubtitlesDS" msprop:Generator_DataSetName="SingleFilmSubtitlesDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vFilmSubtitles" msprop:Generator_UserTableName="vFilmSubtitles" msprop:Generator_RowDeletedName="vFilmSubtitlesRowDeleted" msprop:Generator_TableClassName="vFilmSubtitlesDataTable" msprop:Generator_RowChangedName="vFilmSubtitlesRowChanged" msprop:Generator_RowClassName="vFilmSubtitlesRow" msprop:Generator_RowChangingName="vFilmSubtitlesRowChanging" msprop:Generator_RowEvArgName="vFilmSubtitlesRowChangeEvent" msprop:Generator_RowEvHandlerName="vFilmSubtitlesRowChangeEventHandler" msprop:Generator_TablePropName="vFilmSubtitles" msprop:Generator_TableVarName="tablevFilmSubtitles" msprop:Generator_RowDeletingName="vFilmSubtitlesRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldFilmSubtitlesID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="fldFilmSubtitlesID" msprop:Generator_ColumnPropNameInRow="fldFilmSubtitlesID" msprop:Generator_ColumnVarNameInTable="columnfldFilmSubtitlesID" msprop:Generator_ColumnPropNameInTable="fldFilmSubtitlesIDColumn" type="xs:string" />
+              <xs:element name="fldfk_SubtitlesID" msprop:Generator_UserColumnName="fldfk_SubtitlesID" msprop:Generator_ColumnPropNameInRow="fldfk_SubtitlesID" msprop:Generator_ColumnVarNameInTable="columnfldfk_SubtitlesID" msprop:Generator_ColumnPropNameInTable="fldfk_SubtitlesIDColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="fldfk_FilmID" msprop:Generator_UserColumnName="fldfk_FilmID" msprop:Generator_ColumnPropNameInRow="fldfk_FilmID" msprop:Generator_ColumnVarNameInTable="columnfldfk_FilmID" msprop:Generator_ColumnPropNameInTable="fldfk_FilmIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="fldSubtitlesName" msprop:Generator_UserColumnName="fldSubtitlesName" msprop:Generator_ColumnPropNameInRow="fldSubtitlesName" msprop:Generator_ColumnVarNameInTable="columnfldSubtitlesName" msprop:Generator_ColumnPropNameInTable="fldSubtitlesNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vFilmSubtitles" />
+      <xs:field xpath="mstns:fldFilmSubtitlesID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

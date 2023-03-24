@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleEmailDS" targetNamespace="http://tempuri.org/SingleEmailDS.xsd" xmlns:mstns="http://tempuri.org/SingleEmailDS.xsd" xmlns="http://tempuri.org/SingleEmailDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleEmailDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleEmailDS" msprop:Generator_DataSetName="SingleEmailDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSingleEmail" msprop:Generator_UserTableName="vSingleEmail" msprop:Generator_RowDeletedName="vSingleEmailRowDeleted" msprop:Generator_TableClassName="vSingleEmailDataTable" msprop:Generator_RowChangedName="vSingleEmailRowChanged" msprop:Generator_RowClassName="vSingleEmailRow" msprop:Generator_RowChangingName="vSingleEmailRowChanging" msprop:Generator_RowEvArgName="vSingleEmailRowChangeEvent" msprop:Generator_RowEvHandlerName="vSingleEmailRowChangeEventHandler" msprop:Generator_TablePropName="vSingleEmail" msprop:Generator_TableVarName="tablevSingleEmail" msprop:Generator_RowDeletingName="vSingleEmailRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldEmailID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="fldEmailID" msprop:Generator_ColumnPropNameInRow="fldEmailID" msprop:Generator_ColumnVarNameInTable="columnfldEmailID" msprop:Generator_ColumnPropNameInTable="fldEmailIDColumn" type="xs:short" />
+              <xs:element name="fldEmailAddress" msprop:Generator_UserColumnName="fldEmailAddress" msprop:Generator_ColumnPropNameInRow="fldEmailAddress" msprop:Generator_ColumnVarNameInTable="columnfldEmailAddress" msprop:Generator_ColumnPropNameInTable="fldEmailAddressColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldAppointedTask" msprop:Generator_UserColumnName="fldAppointedTask" msprop:Generator_ColumnPropNameInRow="fldAppointedTask" msprop:Generator_ColumnVarNameInTable="columnfldAppointedTask" msprop:Generator_ColumnPropNameInTable="fldAppointedTaskColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSingleEmail" />
+      <xs:field xpath="mstns:fldEmailID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

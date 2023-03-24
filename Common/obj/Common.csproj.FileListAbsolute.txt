@@ -1,0 +1,6 @@
+C:\Own Program\ParsianMovie\Common\bin\Debug\Common.dll.config
+C:\Own Program\ParsianMovie\Common\bin\Debug\Common.dll
+C:\Own Program\ParsianMovie\Common\bin\Debug\Common.pdb
+C:\Own Program\ParsianMovie\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Own Program\ParsianMovie\Common\obj\Debug\Common.dll
+C:\Own Program\ParsianMovie\Common\obj\Debug\Common.pdb

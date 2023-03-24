@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleCountryProductDS" targetNamespace="http://tempuri.org/SingleCountryProductDS.xsd" xmlns:mstns="http://tempuri.org/SingleCountryProductDS.xsd" xmlns="http://tempuri.org/SingleCountryProductDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleCountryProductDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SingleCountryProductDS" msprop:Generator_DataSetName="SingleCountryProductDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSingleCountryProduct" msprop:Generator_UserTableName="vSingleCountryProduct" msprop:Generator_RowDeletedName="vSingleCountryProductRowDeleted" msprop:Generator_RowChangedName="vSingleCountryProductRowChanged" msprop:Generator_RowClassName="vSingleCountryProductRow" msprop:Generator_RowChangingName="vSingleCountryProductRowChanging" msprop:Generator_RowEvArgName="vSingleCountryProductRowChangeEvent" msprop:Generator_RowEvHandlerName="vSingleCountryProductRowChangeEventHandler" msprop:Generator_TableClassName="vSingleCountryProductDataTable" msprop:Generator_TableVarName="tablevSingleCountryProduct" msprop:Generator_RowDeletingName="vSingleCountryProductRowDeleting" msprop:Generator_TablePropName="vSingleCountryProduct">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldCountryProductID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="fldCountryProductID" msprop:Generator_ColumnVarNameInTable="columnfldCountryProductID" msprop:Generator_ColumnPropNameInRow="fldCountryProductID" msprop:Generator_ColumnPropNameInTable="fldCountryProductIDColumn" type="xs:short" />
+              <xs:element name="fldCountryProductName" msprop:Generator_UserColumnName="fldCountryProductName" msprop:Generator_ColumnVarNameInTable="columnfldCountryProductName" msprop:Generator_ColumnPropNameInRow="fldCountryProductName" msprop:Generator_ColumnPropNameInTable="fldCountryProductNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSingleCountryProduct" />
+      <xs:field xpath="mstns:fldCountryProductID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

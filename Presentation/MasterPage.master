@@ -1,0 +1,530 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs"  Inherits="MasterPage" %>
+<%@ Register Assembly="AjaxControls" Namespace="AjaxControls" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<head runat="server">
+    <title>::Parsian Movie::</title>
+</head>
+<script language="javascript">
+function keyenterall(field,e)
+{
+var key;
+if (window.event)
+   key = window.event.keyCode;
+
+if(key == 1610)
+{
+	if(window.event)
+        window.event.keyCode = 1740;
+}
+
+if (key>31)
+  if (key<128)
+  {
+    if (window.event)
+      window.event.keyCode=' !"#$%،گ)(×+و-./0123456789:ك,=.؟@ِذ}ىُیلا÷ـ،/’د×؛َءٍف‘{ًْإ~جژچ^_پشذزیثبلاهتنمئدخحضقسفعرصطغظ<|>ّ'.charCodeAt(key-32);
+  }
+}
+function keyentersome(field,e)
+{
+var key;
+if(window.event)
+key = window.event.keyCode;
+
+//Baraye Tabdil dota 'ي' be yekdigar
+if(key == 1610)
+{
+	if(window.event)
+        window.event.keyCode = 1740;
+}
+}
+</script>
+
+<body dir="rtl" style="margin: 0">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        
+        <asp:ModalUpdateProgress ID="ModalUpdateProgress1"  runat="server" DisplayAfter="0" BackgroundCssClass="modalProgressRedBackground">
+            <ProgressTemplate>
+                <div class="modalPopupUpdateProgress">
+                    لطفاً منتظر بمانید ... 
+                    <asp:Image SkinID="loading" ID="Image1" runat="server" />
+                </div>
+            </ProgressTemplate>
+        </asp:ModalUpdateProgress>   
+        
+        <table border="0" cellpadding="0" cellspacing="0" id="container">
+            <tr valign="top">
+                <td rowspan="2" id="verticalmenu" valign=top>
+                        <div class="advertismentBG"><h3>ورود كاربران</h3></div>
+                
+                        <asp:LoginView ID="LoginView1" runat="server">
+                            <AnonymousTemplate>
+                                <asp:Login ID="Login1" runat="server" FailureText="تلاش موفقيت آميز نبود لطفاً دوباره تلاش نمائيد" LoginButtonText="ورود" PasswordLabelText="رمز عبور:" PasswordRequiredErrorMessage="لطفاً رمز عبور را وارد نمائيد" RememberMeText="مرا به خاطر بسپار" TextLayout="TextOnTop" TitleText="" UserNameLabelText="نام كاربری:" UserNameRequiredErrorMessage="لطفاً نام كاربري را وارد نمائيد">
+                                    <LayoutTemplate>
+                                        <table border="0" cellpadding="1" cellspacing="0" style="border-collapse: collapse">
+                                            <tr>
+                                                <td>
+                                                    <table border="0" cellpadding="0">
+                                                        <tr>
+                                                            <td>
+                                                                <asp:Label ID="UserNameLabel" SkinID="UserName" runat="server" AssociatedControlID="UserName">نام كاربری:</asp:Label></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <asp:TextBox ID="UserName" runat="server" CssClass="txtusername"></asp:TextBox>
+                                                                <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName"
+                                                                    ErrorMessage="لطفاً نام كاربري را وارد نمائيد" ToolTip="لطفاً نام كاربري را وارد نمائيد"
+                                                                    ValidationGroup="ctl00$ctl05$Login1">*</asp:RequiredFieldValidator>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <asp:Label ID="PasswordLabel" SkinID="Password" runat="server" AssociatedControlID="Password">رمز عبور:</asp:Label></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <asp:TextBox ID="Password" runat="server" TextMode="Password" CssClass="txtpassword"></asp:TextBox>
+                                                                <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password"
+                                                                    ErrorMessage="لطفاً رمز عبور را وارد نمائيد" ToolTip="لطفاً رمز عبور را وارد نمائيد"
+                                                                    ValidationGroup="ctl00$ctl05$Login1">*</asp:RequiredFieldValidator>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" style="color: red">
+                                                                <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center">
+                                                            <table>
+                                                                <tr align="center">
+                                                                    <td align="center">
+                                                                        <asp:ImageButton ID="LoginButton" SkinID="LoginButton" runat="server" CommandName="Login" ValidationGroup="ctl00$ctl05$Login1"/>
+                                                                    </td>
+                                                                    <td align="center">
+                                                                        <asp:HyperLink ID="RegisterButton" SkinID="Register" runat="server" NavigateUrl="~/Register.aspx">ثبت نام</asp:HyperLink>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </LayoutTemplate>
+                                </asp:Login>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                            </LoggedInTemplate>
+                            <RoleGroups>
+                                <asp:RoleGroup Roles="Users">
+                                    <ContentTemplate>
+                                        <!--users-->
+                                        <table align=center>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:LoginName ID="LoginName1" runat="server" />, "خوش آمديد"
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLSpecificationUsers" SkinID="Specification" runat="server" NavigateUrl="~/PUsers/Specification.aspx">تغيير مشخصات كاربری</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLLastbought" SkinID="LastBought" runat="server" NavigateUrl="~/PUsers/LastBought.aspx">خريدهای قبلی</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLBasket" SkinID="Basket" runat="server" NavigateUrl="~/PUsers/Basket.aspx">سبد خريد</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:LoginStatus ID="LoginStatus1" runat="server"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                                <asp:RoleGroup Roles="Admin">
+                                    <ContentTemplate>
+                                        <!--admin-->
+                                        <table align=center>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:LoginName ID="LoginName1" runat="server" />, "خوش آمديد"
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLSpecificationAdmin" SkinID="Specification" runat="server" NavigateUrl="~/PAdmin/Specification.aspx">تغيير مشخصات مديريتی</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLFilms" SkinID="Films" runat="server" NavigateUrl="~/PAdmin/Films.aspx">فيلم ها</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLAdvertisment" SkinID="Advertisment" runat="server" NavigateUrl="~/PAdmin/Advertisment.aspx">تبليغات</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLBaseInformation" SkinID="BaseInformation" runat="server" NavigateUrl="~/PAdmin/BaseInformation.aspx">اطلاعات پايه</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLSkin" SkinID="Skin" runat="server" NavigateUrl="~/PAdmin/Skins.aspx">ظاهر سايت</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLFaq" SkinID="Faq" runat="server" NavigateUrl="~/PAdmin/Faq.aspx">سوالات متداول</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:LoginStatus ID="LoginStatus1" runat="server"/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                                <asp:RoleGroup Roles="SuperAdmin">
+                                    <ContentTemplate>
+                                        <!--superadmin-->
+                                        <table width="100%" align=center>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:LoginName ID="LoginName2" runat="server" />, "خوش آمديد"
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLSpecificationSuperAdmin" SkinID="Specification" runat="server" NavigateUrl="~/PSuperAdmin/Specification.aspx">تغيير مشخصات سوپر مديريتی</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLFilms" SkinID="Films" runat="server" NavigateUrl="~/PAdmin/Films.aspx">فيلم ها</asp:HyperLink>
+                                                </td>   
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLAdvertisment" SkinID="Advertisment" runat="server" NavigateUrl="~/PAdmin/Advertisment.aspx">تبليغات</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLBaseInformation" SkinID="BaseInformation" runat="server" NavigateUrl="~/PAdmin/BaseInformation.aspx">اطلاعات پايه</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLSkin" SkinID="Skin" runat="server" NavigateUrl="~/PAdmin/Skins.aspx">ظاهر سايت</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLFaq" SkinID="Faq" runat="server" NavigateUrl="~/PAdmin/Faq.aspx">سوالات متداول</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLUsersInformation" SkinID="UsersInformation" runat="server" NavigateUrl="~/PSuperAdmin/UsersInformation.aspx">اطلاعات كاربران</asp:HyperLink>
+                                                </td>   
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:HyperLink ID="HLContactUsInformation" SkinID="ContactUsInformation" runat="server" NavigateUrl="~/PSuperAdmin/ContactUsInformation.aspx">اطلاعات تماس با ما</asp:HyperLink>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align=center>
+                                                    <asp:LoginStatus ID="LoginStatus1" runat="server"/>
+                                                </td>
+                                                
+                                            </tr>
+                                        </table>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                            </RoleGroups>
+                        </asp:LoginView>
+                    
+                    <div class="advertismentBG"><h3>چند گزینه</h3></div>
+                        <table width="100%">
+                            <tr>
+                                <td width="0%">
+                                    <asp:LinkButton ID="ConvertExcel" runat="server" OnClick="ConvertExcel_OnClick" ToolTip="دریافت لیست فیلمها به صورت فایل Excel">دریافت لیست فیلمها</asp:LinkButton>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="0%">
+                                    <a href="../TopBuy.aspx">
+                                        بیشترین خریدها
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="0%">
+                                    <a href="../TopRate.aspx">
+                                        بالاترین رتبه ها
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="0%">
+                                    <a href="../Faq.aspx">
+                                        <asp:Label ID="Label1" runat="server" ToolTip="برای اطلاعات بیشتر کلیک نمائید" Text="سوالات متداول"></asp:Label>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                                   
+                    <div class="advertismentBG"><h3>تقسيم بندی براساس فرمت</h3></div>
+                        <table width="100%">
+                            <tr>
+                                <td width="0%">
+                                    <a href="../SearchNResult.aspx?all=true">
+                                        تمامی فيلمها
+                                    </a>
+                                    (<a href="../SearchNResult.aspx?all=true">
+                                        <%Response.Write(GetNumberAll());%>
+                                    </a>)
+                                </td>
+                            </tr>
+                        </table>
+                        <asp:Repeater ID="RepeaterKindOffer" runat="server">
+                            <ItemTemplate>
+                                <table width="100%">
+                                <tr>
+                                <td width="12%">
+                                <a href="../SearchNResult.aspx?KO=<%#DataBinder.Eval(Container.DataItem,"fldKindOfferID")%>">
+                                    <%#DataBinder.Eval(Container.DataItem,"fldKindOfferName")%>
+                                </a>
+                                </td>
+                                <td width="0%">
+                                (<a href="../SearchNResult.aspx?KO=<%#DataBinder.Eval(Container.DataItem,"fldKindOfferID")%>">
+                                    <%#GetNumberKindOffer(DataBinder.Eval(Container.DataItem,"fldKindOfferID"))%>
+                                </a>)
+                                </td>
+                                </tr>
+                                </table>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        <br />
+                                                        
+                    <div class="advertismentBG"><h3>تقسيم بندی براساس ژانر</h3></div>
+                        <asp:Repeater ID="RepeaterGenre" runat="server">
+                            <ItemTemplate>
+                                <table width="100%">
+                                <tr>
+                                <td width="12%">
+                                <a href="../SearchNResult.aspx?Gen=<%#DataBinder.Eval(Container.DataItem,"fldGenreID")%>">
+                                    <%#DataBinder.Eval(Container.DataItem,"fldGenreName")%>
+                                </a>
+                                </td>
+                                <td width="0%">
+                                (<a href="../SearchNResult.aspx?Gen=<%#DataBinder.Eval(Container.DataItem,"fldGenreID")%>">
+                                    <%#GetNumberGenre(DataBinder.Eval(Container.DataItem,"fldGenreID"))%>
+                                </a>)
+                                </td>
+                                </tr>
+                                </table>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        <br />
+                    
+                    <div class="advertismentBG"><h3>تقسيم بندی براساس دهه</h3></div>
+                        <table width="100%">
+                            <tr>
+                                <td width="0%">
+                                    <a href="../SearchNResult.aspx?DecBeg=1920&DecEnd=1930">
+                                        1930-1921
+                                    </a>
+                                    (<a href="../SearchNResult.aspx?DecBeg=1920&DecEnd=1930">
+                                        <%Response.Write(GetNumberDecade("1920","1930"));%>
+                                    </a>)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="0%">
+                                    <a href="../SearchNResult.aspx?DecBeg=1930&DecEnd=1940">
+                                        1940-1931
+                                    </a>
+                                    (<a href="../SearchNResult.aspx?DecBeg=1930&DecEnd=1940">
+                                        <%Response.Write(GetNumberDecade("1930","1940"));%>
+                                    </a>)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="0%">
+                                    <a href="../SearchNResult.aspx?DecBeg=1940&DecEnd=1950">
+                                        1950-1941
+                                    </a>
+                                    (<a href="../SearchNResult.aspx?DecBeg=1940&DecEnd=1950">
+                                        <%Response.Write(GetNumberDecade("1940","1950"));%>
+                                    </a>)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="0%">
+                                    <a href="../SearchNResult.aspx?DecBeg=1950&DecEnd=1960">
+                                        1960-1951
+                                    </a>
+                                    (<a href="../SearchNResult.aspx?DecBeg=1950&DecEnd=1960">
+                                        <%Response.Write(GetNumberDecade("1950","1960"));%>
+                                    </a>)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="0%">
+                                    <a href="../SearchNResult.aspx?DecBeg=1960&DecEnd=1970">
+                                        1970-1961
+                                    </a>
+                                    (<a href="../SearchNResult.aspx?DecBeg=1960&DecEnd=1970">
+                                        <%Response.Write(GetNumberDecade("1960","1970"));%>
+                                    </a>)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="0%">
+                                    <a href="../SearchNResult.aspx?DecBeg=1970&DecEnd=1980">
+                                        1980-1971
+                                    </a>
+                                    (<a href="../SearchNResult.aspx?DecBeg=1970&DecEnd=1980">
+                                        <%Response.Write(GetNumberDecade("1970","1980"));%>
+                                    </a>)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="0%">
+                                    <a href="../SearchNResult.aspx?DecBeg=1980&DecEnd=1990">
+                                        1990-1981
+                                    </a>
+                                    (<a href="../SearchNResult.aspx?DecBeg=1980&DecEnd=1990">
+                                        <%Response.Write(GetNumberDecade("1980","1990"));%>
+                                    </a>)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="0%">
+                                    <a href="../SearchNResult.aspx?DecBeg=1990&DecEnd=2000">
+                                        2000-1991
+                                    </a>
+                                    (<a href="../SearchNResult.aspx?DecBeg=1990&DecEnd=2000">
+                                        <%Response.Write(GetNumberDecade("1990", "2000"));%>
+                                    </a>)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="0%">
+                                    <a href="../SearchNResult.aspx?DecBeg=2000&DecEnd=2010">
+                                        2001-تا كنون
+                                    </a>
+                                    (<a href="../SearchNResult.aspx?DecBeg=2000&DecEnd=2010">
+                                        <%Response.Write(GetNumberDecade("2000", "2010"));%>
+                                    </a>)
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                    
+                </td>
+                <td colspan="2" id="head">
+                    <div id="headicon">
+                        <asp:HyperLink ID="HLTContactUs" SkinID="TContactUs" runat="server" NavigateUrl="~/ContactUs.aspx">تماس با ما</asp:HyperLink>
+                        <asp:HyperLink ID="HLTFaq" SkinID="TFaq" runat="server" NavigateUrl="~/Faq.aspx">سوالات متداول</asp:HyperLink>
+                        <asp:HyperLink ID="HLTAdvancedSearch" SkinID="TAdvancedSearch" runat="server" NavigateUrl="~/SearchNResult.aspx">جستجوی پيشرفته</asp:HyperLink>
+                        <asp:HyperLink ID="HLThome" SkinID="THome" runat="server" NavigateUrl="~/index.aspx">خانه اصلی</asp:HyperLink>
+                    </div>
+                    <div id="myname">
+				        <a>Parsian Movie</a>
+				    </div>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td valign=top>
+                    <asp:Panel ID="PLSearch" runat="server">
+                    <table border="0" cellpadding="0" cellspacing="4">
+                        <tr>
+                            <td valign=middle>
+                                <asp:TextBox ID="TXTSearch" runat="server" CssClass="unwatermarked"></asp:TextBox>
+                            </td>
+                            <td valign=middle>
+                                <asp:DropDownList ID="DRPSearch" CssClass="SearchDropDown" runat="server">
+                                    <asp:ListItem Value="FilmName">نام فيلم</asp:ListItem>
+                                    <asp:ListItem Value="Actors">بازيگران</asp:ListItem>
+                                    <asp:ListItem Value="Director">كارگردان</asp:ListItem>
+                                    <asp:ListItem Value="YearsOfProduct">سال توليد</asp:ListItem>
+                                </asp:DropDownList>
+                            </td>
+                            <td valign=middle>
+                                <asp:ImageButton ID="IBSearch" SkinID="SearchButton" CausesValidation="false" runat="server" OnClick="IBSearch_Click"/>
+                            </td>
+                            <td valign=middle>
+                                <asp:HyperLink ID="HLAdvancedSearch" SkinID="AdvancedSearch" runat="server" NavigateUrl="~/SearchNResult.aspx">جستجوی پيشرفته</asp:HyperLink>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    <table border="1" cellpadding="5" width="530px" align="center">
+                        <tr>
+                            <td align="center">
+                                <label dir="rtl" class="onvanZirNevis">**توجه**</label>
+                                <br />
+                                <label dir="rtl">در صورت انتخاب فیلم از لیست Excel ،شماره فیلم مورد نظر را در قسمت مربوطه در سبد خرید وارد نمائید و سرانجام خرید خود را تأئید نمائید.</label>
+                            </td>
+                        </tr>
+                    </table>
+                    </asp:Panel>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder> 
+                </td>
+                <td valign=top id="advertisment">
+                    <div class="advertismentBG"><h3>تبليغات</h3></div>
+                    <asp:Repeater ID="RepeaterAdvertisment" runat="server">
+                        <ItemTemplate>
+                            <table align="center">
+                                <tr>
+                                    <td align="center">
+                                        <asp:Literal ID="Literal1" runat="server" Text='<%# Eval("fldCode") %>'></asp:Literal>
+                                    </td>
+                                </tr>
+                            </table>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </td>
+            </tr>
+        </table>
+        <div id="footerBG">
+            <div id="footer">
+                <div id="copy_right">  Copyright 2008 PersianMovie </div>
+                <div id="designed">
+                    <!-- PersianStat -->
+                    <script language='javascript' type='text/javascript' src='http://www.persianstat.ir/service/stat.js'></script>
+                    <script language='javascript' type='text/javascript'>
+                    persianstat(10045741, 0);
+                    </script>
+                    <!-- /PersianStat -->
+                    <!--Designed by <a href="http://www.amirmohsen.ir" title="امیر محسن">Amir Mohsen</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

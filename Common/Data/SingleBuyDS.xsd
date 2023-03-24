@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SingleBuyDS" targetNamespace="http://tempuri.org/SingleBuyDS.xsd" xmlns:mstns="http://tempuri.org/SingleBuyDS.xsd" xmlns="http://tempuri.org/SingleBuyDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ParsianMovieDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ParsianMovieDBConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ParsianMovieDBConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Common.Properties.Settings.GlobalReference.Default.ParsianMovieDBConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SingleBuyDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="SingleBuyDS" msprop:Generator_UserDSName="SingleBuyDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vSingleBuy" msprop:Generator_TableClassName="vSingleBuyDataTable" msprop:Generator_TableVarName="tablevSingleBuy" msprop:Generator_TablePropName="vSingleBuy" msprop:Generator_RowDeletingName="vSingleBuyRowDeleting" msprop:Generator_UserTableName="vSingleBuy" msprop:Generator_RowChangingName="vSingleBuyRowChanging" msprop:Generator_RowEvHandlerName="vSingleBuyRowChangeEventHandler" msprop:Generator_RowDeletedName="vSingleBuyRowDeleted" msprop:Generator_RowEvArgName="vSingleBuyRowChangeEvent" msprop:Generator_RowChangedName="vSingleBuyRowChanged" msprop:Generator_RowClassName="vSingleBuyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldBuyID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnfldBuyID" msprop:Generator_ColumnPropNameInRow="fldBuyID" msprop:Generator_ColumnPropNameInTable="fldBuyIDColumn" msprop:Generator_UserColumnName="fldBuyID" type="xs:string" />
+              <xs:element name="fldfk_PaymentWayID" msprop:Generator_ColumnVarNameInTable="columnfldfk_PaymentWayID" msprop:Generator_ColumnPropNameInRow="fldfk_PaymentWayID" msprop:Generator_ColumnPropNameInTable="fldfk_PaymentWayIDColumn" msprop:Generator_UserColumnName="fldfk_PaymentWayID" type="xs:short" />
+              <xs:element name="fldfk_TransmissionKindID" msprop:Generator_ColumnVarNameInTable="columnfldfk_TransmissionKindID" msprop:Generator_ColumnPropNameInRow="fldfk_TransmissionKindID" msprop:Generator_ColumnPropNameInTable="fldfk_TransmissionKindIDColumn" msprop:Generator_UserColumnName="fldfk_TransmissionKindID" type="xs:short" />
+              <xs:element name="fldfk_DVDKindID" msprop:Generator_ColumnVarNameInTable="columnfldfk_DVDKindID" msprop:Generator_ColumnPropNameInRow="fldfk_DVDKindID" msprop:Generator_ColumnPropNameInTable="fldfk_DVDKindIDColumn" msprop:Generator_UserColumnName="fldfk_DVDKindID" type="xs:short" />
+              <xs:element name="fldBuyDate" msprop:Generator_ColumnVarNameInTable="columnfldBuyDate" msprop:Generator_ColumnPropNameInRow="fldBuyDate" msprop:Generator_ColumnPropNameInTable="fldBuyDateColumn" msprop:Generator_UserColumnName="fldBuyDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldPrice" msprop:Generator_ColumnVarNameInTable="columnfldPrice" msprop:Generator_ColumnPropNameInRow="fldPrice" msprop:Generator_ColumnPropNameInTable="fldPriceColumn" msprop:Generator_UserColumnName="fldPrice" type="xs:int" minOccurs="0" />
+              <xs:element name="fldReferenceNumber" msprop:Generator_ColumnVarNameInTable="columnfldReferenceNumber" msprop:Generator_ColumnPropNameInRow="fldReferenceNumber" msprop:Generator_ColumnPropNameInTable="fldReferenceNumberColumn" msprop:Generator_UserColumnName="fldReferenceNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vSingleBuy" />
+      <xs:field xpath="mstns:fldBuyID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
